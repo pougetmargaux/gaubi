@@ -1,17 +1,18 @@
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
-    <title>rpsls.html</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
+  <title>Gàubi</title>
+</head>
+<body>
+
 
   <div id="accordion">
     <div class="card">
@@ -32,6 +33,9 @@
             </form>
           </div>
 
+
+          <div class="menu-choix">
+          <div class="checkbox">
             <div class="checkbox-category">
             <fieldset>
               <legend>Type of game :</legend>
@@ -71,9 +75,27 @@
             </div>
           </fieldset>
           </div>
+        </div>
 
-          <img class="cursor-munu-img" src="images/menu-cursor.png" alt="image-menu-cursor"></img>
-
+          <div class="minimum-age">
+            <!-- <p class="titre-minimum-age">MINIMUM AGE </p> -->
+          <input type="range" min="6" max="15" step="1" list="tickmarks">
+          <datalist id="tickmarks">
+            <!-- Chrome n'affiche pas les étiquettes de curseur -->
+        <option value="6" label="6">
+        <option value="7" label="7">
+        <option value="8" label="8">
+        <option value="9" label="9">
+        <option value="10" label="10">
+        <option value="11" label="11">
+        <option value="12" label="12">
+        <option value="13" label="13">
+        <option value="14" label="14">
+        <option value="15" label="15">
+        </datalist>
+        </div>
+          <!-- <img class="cursor-munu-img" src="images/menu-cursor.png" alt="image-menu-cursor"></img> -->
+        </div>
         </div>
       </div>
     </div>
@@ -81,98 +103,149 @@
     </div>
   </div>
 
-  <div class="container-fluid">
-    <div class="row explication-video-data">
 
-      <div class="explications col-sm">
-        <h1 class="nom-du-jeu-carousel big"> RPSLS </h1>
-        <p class="description-jeu">
-          Rock, Paper, Scissors, Lizard, Spock is a game <br>of chance that expands.
-        </p>
-        <img class="rpsls-data-img" src="images/rpsls/rpsls-data.jpg" alt="rplsl-data"></img>
-      </div>
-        <div class="video-principale">
-          <video class="video-presentation-RPSLS"controls autoplay loop>
-            <source src="videos/rpsls/presentation-rpsls.mp4" type="video/mp4">
-          </video>
-          <!-- <img class="img-preview-video" src="images/preview-video.png" alt="preview-video"> -->
-        </div>
-      </div> <!-- closes row -->
-
-    <div class="row">
-
-      <div class="explication-jeu">
-        <p>Rock–paper–scissors (also known as paper, scissors, stone or other variants) is a hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index and middle fingers extended, forming a V). "Scissors" is identical to the two-fingered V sign (aka "victory" or "peace sign") except that it is pointed horizontally instead of being held upright in the air. A simultaneous, zero-sum game, it has only two possible outcomes other than a tie: one of the two players wins, and the other player loses.</p>
-      </div>
-
-</div> <!-- closes row -->
-
-    <div class="row">
-
+  <div class="presentation-banner">
     <div id="carouselExampleIndicators" class="carousel slide col-sm" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         </ol>
-        <div class="carousel-inner">
+    <div class="carousel-inner">
 
-          <div class="carousel-item active">
-            <video class="video-carousel-ciseaux" controls autoplay loop>
-              <source src="videos/rpsls/presentation-scissors.mp4" type="video/mp4">
-            </video>
+        <div class="carousel-item active">
+          <div class="carousel-caption d-md-block">
+            <h1 class="nom-du-jeu-carousel rpsls"> RPSLS </h1>
+            <p class="description-jeu">
+              Rock, Paper, Scissors, Lizard, Spock is a game <br>of chance that expands.
+            </p>
           </div>
+          <img class="d-block w-100" src="images/banner-homepage/rpsls-banner.jpg" alt="rpsls-banner">
+        </div>
 
-          <div class="carousel-item">
-              <video class="video-carousel-paper" controls autoplay loop>
-                <source src="videos/rpsls/presentation-paper.mp4" type="video/mp4">
-              </video>
-          </div>
-          <div class="carousel-item">
-              <video class="video-carousel-lizard" controls autoplay loop>
-                <source src="videos/rpsls/presentation-lizard.mp4" type="video/mp4">
-              </video>
-          </div>
-          <div class="carousel-item">
-              <video class="video-carousel-rock" controls autoplay loop>
-                <source src="videos/rpsls/presentation-rock.mp4" type="video/mp4">
-              </video>
-          </div>
-          <div class="carousel-item">
-              <video class="video-carousel-spock" controls autoplay loop>
-                <source src="videos/rpsls/presentation-spock.mp4" type="video/mp4">
-              </video>
-          </div>
+      <div class="carousel-item">
+        <div class="carousel-caption d-md-block">
+          <h1 class="nom-du-jeu-carousel odds"> Evens and Odds </h1>
+          <p class="description-jeu">Odds and evens is a hand game <br> played used to decide an issue.</p>
+          <!-- <img class="rpsls-data-img" src="images/rpsls/rpsls-data.jpg" alt="rplsl-data"></img> -->
+        </div>
+        <img class="d-block w-100" src="images/banner-homepage/evens-odds-banner.jpg" alt="evens-and-odds-banner">
       </div>
-    </div>
-
-  </div> <!-- closes row -->
-
-      <div class="row">
-
-    <div class="schema-rpsls col-md-8 offset-md-2">
-      <img class="img-schema-rpsls" src="images/rpsls-graphique/schéma-complet.jpg" alt="graphique-rpsls"></img>
-    </div>
-
-
-</div>
-
-      <div class="row">
-
-    <div class="cta-rpsls">
-      <video class="video-cta-rpsls" controls autoplay loop>
-        <source src="videos/rpsls/ctarpsls.mp4" type="video/mp4">
-      </video>
-    </div>
-
+      <div class="carousel-item">
+        <div class="carousel-caption d-md-block">
+          <h1 class="nom-du-jeu-carousel mourre"> La Mourre </h1>
+          <p class="description-jeu">La Mourre is a game of chance in which two<br> players simultaneously show a number of fingers.</p>
+          <!-- <img class="rpsls-data-img" src="images/rpsls/rpsls-data.jpg" alt="rplsl-data"></img> -->
+        </div>
+        <img class="d-block w-100" src="images/banner-homepage/mourre-banner.jpg" alt="mourre-banner">
       </div>
 
+    </div>
+    </div>
+  </div>
+
+
+
+    <div class="bloc-preview rpsls">
+      <div class="preview-game">
+        <a href="rpsls.html">
+          <img class="img-preview-hompage" src="images/preview-game-homepage-rpsls.png" alt="preview-game-homepage"></img>
+        </a>
+      </div>
+      <div class="preview-game odds">
+        <a href="evens.html">
+          <img class="img-preview-hompage" src="images/preview-game-homepage-odds.png" alt="preview-game-homepage"></img>
+        </a>
+      </div>
+      <div class="preview-game mourre">
+        <a href="mourre.html">
+          <img class="img-preview-hompage" src="images/preview-game-homepage-mourre.png" alt="preview-game-homepage"></img>
+        </a>
+      </div>
+      <div class="preview-game mourre">
+        <a href="rpsls.html">
+          <img class="img-preview-hompage" src="images/preview-game-homepage-4.png" alt="preview-game-homepage"></img>
+        </a>
+      </div>
+      <div class="preview-game number4">
+        <a href="mourre.html">
+          <!-- <img class="img-preview-hompage" src="images/preview-game-homepage.png" alt="preview-game-homepage"></img> -->
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+      <div class="preview-game number5">
+        <a href="evens.html">
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+      <div class="preview-game number6">
+        <a href="mourre.html">
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+      <div class="preview-game number7">
+        <a href="rpsls.html">
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+      <div class="preview-game number8">
+        <a href="evens.html">
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+      <div class="preview-game number9">
+        <a href="mourre.html">
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+      <div class="preview-game number10">
+        <a href="rpsls.html">
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+      <div class="preview-game number11">
+        <a href="mourre.html">
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- <input type="range" min="6" max="15" step="1" list="tickmarks">
+    <datalist id="tickmarks">
+      Chrome n'affiche pas les étiquettes de curseur
+  <option value="6" label="6">
+  <option value="7" label="7">
+  <option value="8" label="8">
+  <option value="9" label="9">
+  <option value="10" label="10">
+  <option value="11" label="11">
+  <option value="12" label="12">
+  <option value="13" label="13">
+  <option value="14" label="14">
+  <option value="15" label="15">
+</datalist> -->
+
+    <img class="barre-avancement" src="images/barre-chargement.png" alt="Barre-chargement-de-jeux"
 
     <div class="footer">
-        <p class="mentions-legales"> Mentions légales </p>
-        <p class="copyright"> © Gàubi 2018 </p>
+        <p class="mentions-legales"> Mentions légales © Gàubi 2018</p>
     </div>
 
   <!-- Optional JavaScript -->
@@ -181,11 +254,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script type="text/javascript">
-  $('#carouselExampleIndicators').carousel({
-    interval: 9000,
-    pause : false
-  })
-
-  $('#myCollapsible').collapse({
-  toggle: false
-  })
+    //Ici les commandes JavaScript
+  </script>
+  </body>
+  </html>

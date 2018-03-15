@@ -1,0 +1,191 @@
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
+    <title>rpsls.html</title>
+  </head>
+  <body>
+
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <img class="logo-menu" src="images/logo.png"></img>
+          </button>
+      </div>
+
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+
+          <div class="recherche_p">
+            <form action="/search" id="searchthis" method="get">
+              <input id="search" name="q" type="text" placeholder="Rechercher" />
+              <img id="search-button" src="images/search-button.svg" alt="search-button"></img>
+              <!-- <input id="search-btn" type="submit" value="Rechercher" /> -->
+            </form>
+          </div>
+
+            <div class="checkbox-category">
+            <fieldset>
+              <legend>Type of game :</legend>
+              <div>
+                <input type="checkbox" id="strategy" name="category" value="strategy">
+                <label for="strategy">Strategy</label>
+              </div>
+              <div>
+                <input type="checkbox" id="mathematics" name="category" value="mathematics">
+                <label for="mathematics">Mathematics</label>
+              </div>
+              <div>
+                <input type="checkbox" id="chance" name="category" value="chance">
+                <label for="chance">Chance</label>
+              </div>
+              <div>
+                <input type="checkbox" id="speed" name="category" value="speed">
+                <label for="speed">Speed</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="checkbox-difficulty">
+          <fieldset>
+            <legend>Difficulty :</legend>
+            <div>
+              <input type="checkbox" id="easy" name="difficulty" value="easy">
+              <label for="easy">Easy</label>
+            </div>
+            <div>
+              <input type="checkbox" id="medium" name="difficulty" value="medium">
+              <label for="medium">Medium</label>
+            </div>
+            <div>
+              <input type="checkbox" id="hard" name="difficulty" value="hard">
+              <label for="hard">Hard</label>
+            </div>
+          </fieldset>
+          </div>
+
+          <img class="cursor-munu-img" src="images/menu-cursor.png" alt="image-menu-cursor"></img>
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row explication-video-data">
+
+      <div class="explications col-sm">
+        <h1 class="nom-du-jeu-carousel big"> RPSLS </h1>
+        <p class="description-jeu">
+          Rock, Paper, Scissors, Lizard, Spock is a game <br>of chance that expands.
+        </p>
+        <img class="rpsls-data-img" src="images/rpsls/rpsls-data.jpg" alt="rplsl-data"></img>
+      </div>
+        <div class="video-principale">
+          <video class="video-presentation-RPSLS"controls autoplay loop>
+            <source src="videos/rpsls/presentation-rpsls.mp4" type="video/mp4">
+          </video>
+          <!-- <img class="img-preview-video" src="images/preview-video.png" alt="preview-video"> -->
+        </div>
+      </div> <!-- closes row -->
+
+    <div class="row">
+
+      <div class="explication-jeu">
+        <p>Rock–paper–scissors (also known as paper, scissors, stone or other variants) is a hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index and middle fingers extended, forming a V). "Scissors" is identical to the two-fingered V sign (aka "victory" or "peace sign") except that it is pointed horizontally instead of being held upright in the air. A simultaneous, zero-sum game, it has only two possible outcomes other than a tie: one of the two players wins, and the other player loses.</p>
+      </div>
+
+</div> <!-- closes row -->
+
+    <div class="row">
+
+    <div id="carouselExampleIndicators" class="carousel slide col-sm" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <video class="video-carousel-ciseaux" controls autoplay loop>
+              <source src="videos/rpsls/presentation-scissors.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="carousel-item">
+              <video class="video-carousel-paper" controls autoplay loop>
+                <source src="videos/rpsls/presentation-paper.mp4" type="video/mp4">
+              </video>
+          </div>
+          <div class="carousel-item">
+              <video class="video-carousel-lizard" controls autoplay loop>
+                <source src="videos/rpsls/presentation-lizard.mp4" type="video/mp4">
+              </video>
+          </div>
+          <div class="carousel-item">
+              <video class="video-carousel-rock" controls autoplay loop>
+                <source src="videos/rpsls/presentation-rock.mp4" type="video/mp4">
+              </video>
+          </div>
+          <div class="carousel-item">
+              <video class="video-carousel-spock" controls autoplay loop>
+                <source src="videos/rpsls/presentation-spock.mp4" type="video/mp4">
+              </video>
+          </div>
+      </div>
+    </div>
+
+  </div> <!-- closes row -->
+
+      <div class="row">
+
+    <div class="schema-rpsls col-md-8 offset-md-2">
+      <img class="img-schema-rpsls" src="images/rpsls-graphique/schéma-complet.jpg" alt="graphique-rpsls"></img>
+    </div>
+
+
+</div>
+
+      <div class="row">
+
+    <div class="cta-rpsls">
+      <video class="video-cta-rpsls" controls autoplay loop>
+        <source src="videos/rpsls/ctarpsls.mp4" type="video/mp4">
+      </video>
+    </div>
+
+      </div>
+
+
+    <div class="footer">
+        <p class="mentions-legales"> Mentions légales </p>
+        <p class="copyright"> © Gàubi 2018 </p>
+    </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $('#carouselExampleIndicators').carousel({
+    interval: 9000,
+    pause : false
+  })
+
+  $('#myCollapsible').collapse({
+  toggle: false
+  })
