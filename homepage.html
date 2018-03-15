@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
+  <title>Gàubi</title>
+</head>
+<body>
+
+
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <img class="logo-menu" src="images/logo.png"></img>
+          </button>
+      </div>
+
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+
+          <div class="recherche_p">
+            <form action="/search" id="searchthis" method="get">
+              <input id="search" name="q" type="text" placeholder="Rechercher" />
+              <img id="search-button" src="images/search-button.svg" alt="search-button"></img>
+              <!-- <input id="search-btn" type="submit" value="Rechercher" /> -->
+            </form>
+          </div>
+
+
+          <div class="menu-choix">
+          <div class="checkbox">
+            <div class="checkbox-category">
+            <fieldset>
+              <legend>Type of game :</legend>
+              <div>
+                <input type="checkbox" id="strategy" name="category" value="strategy">
+                <label for="strategy">Strategy</label>
+              </div>
+              <div>
+                <input type="checkbox" id="mathematics" name="category" value="mathematics">
+                <label for="mathematics">Mathematics</label>
+              </div>
+              <div>
+                <input type="checkbox" id="chance" name="category" value="chance">
+                <label for="chance">Chance</label>
+              </div>
+              <div>
+                <input type="checkbox" id="speed" name="category" value="speed">
+                <label for="speed">Speed</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="checkbox-difficulty">
+          <fieldset>
+            <legend>Difficulty :</legend>
+            <div>
+              <input type="checkbox" id="easy" name="difficulty" value="easy">
+              <label for="easy">Easy</label>
+            </div>
+            <div>
+              <input type="checkbox" id="medium" name="difficulty" value="medium">
+              <label for="medium">Medium</label>
+            </div>
+            <div>
+              <input type="checkbox" id="hard" name="difficulty" value="hard">
+              <label for="hard">Hard</label>
+            </div>
+          </fieldset>
+          </div>
+        </div>
+
+          <div class="minimum-age">
+            <!-- <p class="titre-minimum-age">MINIMUM AGE </p> -->
+          <input type="range" min="6" max="15" step="1" list="tickmarks">
+          <datalist id="tickmarks">
+            <!-- Chrome n'affiche pas les étiquettes de curseur -->
+        <option value="6" label="6">
+        <option value="7" label="7">
+        <option value="8" label="8">
+        <option value="9" label="9">
+        <option value="10" label="10">
+        <option value="11" label="11">
+        <option value="12" label="12">
+        <option value="13" label="13">
+        <option value="14" label="14">
+        <option value="15" label="15">
+        </datalist>
+        </div>
+          <!-- <img class="cursor-munu-img" src="images/menu-cursor.png" alt="image-menu-cursor"></img> -->
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+    </div>
+  </div>
+
+
+  <div class="presentation-banner">
+    <div id="carouselExampleIndicators" class="carousel slide col-sm" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="carousel-caption d-md-block">
+            <h1 class="nom-du-jeu-carousel rpsls"> RPSLS </h1>
+            <p class="description-jeu">
+              Rock, Paper, Scissors, Lizard, Spock is a game <br>of chance that expands.
+            </p>
+          </div>
+          <img class="d-block w-100" src="images/banner-homepage/rpsls-banner.jpg" alt="rpsls-banner">
+        </div>
+
+      <div class="carousel-item">
+        <div class="carousel-caption d-md-block">
+          <h1 class="nom-du-jeu-carousel odds"> Evens and Odds </h1>
+          <p class="description-jeu">Odds and evens is a hand game <br> played used to decide an issue.</p>
+          <!-- <img class="rpsls-data-img" src="images/rpsls/rpsls-data.jpg" alt="rplsl-data"></img> -->
+        </div>
+        <img class="d-block w-100" src="images/banner-homepage/evens-odds-banner.jpg" alt="evens-and-odds-banner">
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-caption d-md-block">
+          <h1 class="nom-du-jeu-carousel mourre"> La Mourre </h1>
+          <p class="description-jeu">La Mourre is a game of chance in which two<br> players simultaneously show a number of fingers.</p>
+          <!-- <img class="rpsls-data-img" src="images/rpsls/rpsls-data.jpg" alt="rplsl-data"></img> -->
+        </div>
+        <img class="d-block w-100" src="images/banner-homepage/mourre-banner.jpg" alt="mourre-banner">
+      </div>
+
+    </div>
+    </div>
+  </div>
+
+
+
+    <div class="bloc-preview rpsls">
+      <div class="preview-game">
+        <a href="index.html">
+          <img class="img-preview-hompage" src="images/preview-game-homepage-rpsls.png" alt="preview-game-homepage"></img>
+        </a>
+      </div>
+      <div class="preview-game odds">
+        <a href="evens.html">
+          <img class="img-preview-hompage" src="images/preview-game-homepage-odds.png" alt="preview-game-homepage"></img>
+        </a>
+      </div>
+      <div class="preview-game mourre">
+        <a href="mourre.html">
+          <img class="img-preview-hompage" src="images/preview-game-homepage-mourre.png" alt="preview-game-homepage"></img>
+        </a>
+      </div>
+      <div class="preview-game mourre">
+        <a href="index.html">
+          <img class="img-preview-hompage" src="images/preview-game-homepage-4.png" alt="preview-game-homepage"></img>
+        </a>
+      </div>
+      <div class="preview-game number4">
+        <a href="index.html">
+          <!-- <img class="img-preview-hompage" src="images/preview-game-homepage.png" alt="preview-game-homepage"></img> -->
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+      <div class="preview-game number5">
+        <a href="index.html">
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+      <div class="preview-game number6">
+        <a href="index.html">
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+      <div class="preview-game number7">
+        <a href="index.html">
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+      <div class="preview-game number8">
+        <a href="index.html">
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+      <div class="preview-game number9">
+        <a href="index.html">
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+      <div class="preview-game number10">
+        <a href="index.html">
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+      <div class="preview-game number11">
+        <a href="index.html">
+          <div class="game">
+            <p class="titre-game-preview"> NAME<br>GAME </p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- <input type="range" min="6" max="15" step="1" list="tickmarks">
+    <datalist id="tickmarks">
+      Chrome n'affiche pas les étiquettes de curseur
+  <option value="6" label="6">
+  <option value="7" label="7">
+  <option value="8" label="8">
+  <option value="9" label="9">
+  <option value="10" label="10">
+  <option value="11" label="11">
+  <option value="12" label="12">
+  <option value="13" label="13">
+  <option value="14" label="14">
+  <option value="15" label="15">
+</datalist> -->
+
+    <img class="barre-avancement" src="images/barre-chargement.png" alt="Barre-chargement-de-jeux"
+
+    <div class="footer">
+        <p class="mentions-legales"> Mentions légales © Gàubi 2018</p>
+    </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    //Ici les commandes JavaScript
+  </script>
+  </body>
+  </html>

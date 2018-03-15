@@ -1,0 +1,517 @@
+.nom-du-jeu-carousel {
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1.2;
+/*  margin-bottom: 26vh; */
+  color: #4A4A4A;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* .nom-du-jeu-carousel.rpsls{
+  color: #91CBE9;
+}
+
+.nom-du-jeu-carousel.odds{
+  color: #BBB1E3;
+}
+
+.nom-du-jeu-carousel.mourre{
+  color: #FFE389;
+} */
+
+.description-jeu {
+  font-size: 30px;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #4A4A4A;
+  margin-top: 0.6em;
+}
+
+.video-principale{
+  margin-right: 10vw;
+  margin-top: 7vh;
+}
+
+.img-preview-video {
+
+}
+
+.explication-jeu {
+  background-color: #4A4A4A;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.explication-jeu p {
+  color: #FFF;
+  padding: 7vh 10vw 5vh;
+  line-height: 1.8;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.carousel {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #a3cbe8;
+}
+
+.carousel-inner{
+/*  height: 57vh; */
+}
+.carousel-item {
+  max-height: 100vh;
+  /* width: 100vw; */
+
+}
+
+.carousel-caption{
+  text-align: left;
+  top: 14%;
+  left: 8%;
+}
+
+#carouselExampleIndicators {
+  flex-wrap: wrap;
+  max-width: 100vw;
+  justify-content: center;
+}
+
+.carousel-control-prev {
+/*  width: 10%; */
+}
+
+.carousel-control-prev-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-control-next {
+  width: 10%;
+}
+
+.carousel-control-prev-next {
+  width: 30px;
+  height: 30px;
+}
+
+.bloc-preview {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3vw;
+}
+
+.preview-game {
+  flex : 1 1 270px;
+  margin-bottom: 4vh;
+}
+
+.preview-game.4 {
+
+}
+
+.img-preview-hompage {
+  vertical-align: middle;
+  border-style: none;
+  width: 22.5vw;
+}
+
+.collapse {
+    width: 100vw;
+  background-color: #FAE9E4;
+}
+
+.collapseOne{
+
+}
+
+.collapse.show{
+
+}
+
+.logo-header {
+  width: 90px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #4A4A4A;
+  min-height: 70px;
+  padding-top: 1.5vw;
+/*  position: absolute;
+  bottom: 0px;
+  width: 100vw; */
+}
+
+.mentions-legales {
+  font-size: 17px;
+  color: #FFF;
+  text-align: right;
+  float: right;
+  padding-right: 3vw;
+}
+
+.copyright {
+  font-size: 17px;
+  color: #FFF;
+  text-align: left;
+  float: left;
+  padding-left: 3vw;
+  margin-top: 0.3em;
+}
+
+.information-spock-banner {
+  z-index: 1000;
+}
+
+
+
+/* .video-presentation-RPSLS */
+
+.explications {
+display: flex;
+flex-direction: column;
+align-items: left;
+margin-left: 5%;
+margin-top: 13%;
+}
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+
+.rpsls-data-img {
+  width: 35vw;
+/*  margin-left: 6.5vw; */
+  margin-top: 5vh;
+}
+
+#win-loose-paper {
+  color: #EC999C;
+  top: 45vh;
+  position: absolute;
+}
+
+
+
+#win-loose-ciseaux {
+  color: #EC999C;
+  top: 45vh;
+  position: absolute;
+  width: 85vw;
+}
+
+
+
+#win-loose-lizard {
+  color: #EC999C;
+  top: 45vh;
+  position: absolute;
+  width: 85vw;
+}
+
+.video-carousel-lizard,
+.video-carousel-rock,
+.video-carousel-spock,
+.video-carousel-paper,
+.video-carousel-ciseaux   {
+/*  width: 100%; */
+}
+
+
+
+#win-loose-rock {
+  color: #EC999C;
+/*  top: 45vh;
+  position: absolute;
+  width: 85vw; */
+}
+
+.rock-wins,
+.spock-wins,
+.lizard-wins,
+.ciseaux-wins,
+.paper-wins  {
+  position: absolute;
+  right : 0;
+  top : 0;
+/*  text-align: left;
+  margin-left: 50vw;
+  font-weight: 400;
+  font-size: 40px;
+  color: #EC999C; */
+}
+
+#win-loose-spock {
+  color: #EC999C;
+  top: 45vh;
+  position: absolute;
+  width: 85vw;
+}
+
+
+
+
+.video-cta-rpsls{
+  width: 100vw;
+}
+
+.cta-rpsls {
+/*  max-height: 95vh; */
+}
+
+.card-header {
+  background-color: #FAE9E4;
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.card-header .btn::after{
+ content : " ";
+ background: url(../images/icons/menu.png);
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: top center;
+ display: block;
+ width: 150px;
+ height: 75px;
+ position: absolute;
+ bottom: -3.5em;
+ left: 50%;
+ transform: translateX(-50%);
+ z-index: 20;
+}
+
+
+.logo-menu {
+  width: 8vw;
+}
+
+.checkbox-category {
+  margin-left: 6.5vw;
+  margin-top: 5vh;
+  max-width: 20vw;
+}
+
+.checkbox-difficulty {
+  margin-left: 6.5vw;
+  margin-top: 5vh;
+  max-width: 20vw;
+  margin-bottom: 30px;
+}
+
+
+
+#search{
+  color: #00000026;
+  background-color: transparent;
+  border: none;
+  margin: 0vh 0vw 0vh 6vw;
+  font-size: 70px;
+  border-bottom: solid;
+  width: 70vw;
+}
+
+#search-button{
+  width: 5vw;
+  margin-bottom: 6vh;
+  margin-right: 11vw;
+}
+
+.cursor-munu-img{
+  position: absolute;
+  right: 13%;
+  top: 35%;
+  width: 58vw;
+  margin-top: 0px;
+}
+
+.schema-rpsls img {
+  width: 100%;
+}
+
+.img-schema-rpsls{
+
+  margin: 0 auto;
+}
+
+.card{
+  border: none;
+}
+
+.explication-video-data {
+  margin-bottom: 80px;
+}
+
+.nom-du-jeu-carousel.big {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 1.2;
+/*  margin-bottom: 26vh; */
+  color: #4A4A4A;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.game {
+  width: 22.5vw;
+  height: 280px;
+  background-color: #AEE7DD;
+  border-bottom: solid 60px #4BC9B3;
+}
+
+.number5 .game{
+  background-color: #D4C1FF;
+  border-bottom: solid 60px #9E74FF;
+}
+
+.number6 .game {
+  background-color: #FDD0BA;
+  border-bottom: solid 60px #F8C39C;
+}
+
+.number7 .game {
+  background-color: #EE8F8F;
+  border-bottom: solid 60px #D90404;
+}
+
+.number8 .game {
+  background-color: #EDB697;
+  border-bottom: solid 60px #D65B16;
+}
+
+.number9 .game {
+  background-color: #E0ECAF;
+  border-bottom: solid 60px #B9D44C;
+}
+
+.number10 .game {
+  background-color: #AFC7EC;
+  border-bottom: solid 60px #4E83D4;
+}
+
+.number11 .game {
+  background-color: #ADE5EC;
+  border-bottom: solid 60px #49C5D4;
+}
+
+.titre-game-preview {
+  display: flex;
+  font-size: 3em;
+  font-weight: 800;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  margin-left: 28%;
+  vertical-align: middle;
+  padding-top: 78px;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+
+/* Cette partie n'est que pour le CURSEUR : */
+
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 700px; /* Specific width is required for Firefox. */
+  background: #4A4A4A; /* Otherwise white in Chrome */
+  border-radius: 22px;
+  height: 2px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+  border: 1px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 1px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+
+.barre-avancement{
+  max-width: 20vw;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+
+.checkbox{
+  display: flex;
+  flex-direction: column;
+}
+
+.minimum-age{
+  display: flex;
+    margin-top: 100px;
+    margin-left: 220px;
+}
+
+.menu-choix{
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.recherche_p{
+  margin-top: 20px;
+}

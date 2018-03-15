@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
+  <title>mourre.html</title>
+</head>
+<body>
+
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <img class="logo-menu" src="images/logo.png"></img>
+        </button>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+
+        <div class="recherche_p">
+          <form action="/search" id="searchthis" method="get">
+            <input id="search" name="q" type="text" placeholder="Rechercher" />
+            <img id="search-button" src="images/search-button.svg" alt="search-button"></img>
+            <!-- <input id="search-btn" type="submit" value="Rechercher" /> -->
+          </form>
+        </div>
+
+          <div class="checkbox-category">
+          <fieldset>
+            <legend>Type of game :</legend>
+            <div>
+              <input type="checkbox" id="strategy" name="category" value="strategy">
+              <label for="strategy">Strategy</label>
+            </div>
+            <div>
+              <input type="checkbox" id="mathematics" name="category" value="mathematics">
+              <label for="mathematics">Mathematics</label>
+            </div>
+            <div>
+              <input type="checkbox" id="chance" name="category" value="chance">
+              <label for="chance">Chance</label>
+            </div>
+            <div>
+              <input type="checkbox" id="speed" name="category" value="speed">
+              <label for="speed">Speed</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="checkbox-difficulty">
+        <fieldset>
+          <legend>Difficulty :</legend>
+          <div>
+            <input type="checkbox" id="easy" name="difficulty" value="easy">
+            <label for="easy">Easy</label>
+          </div>
+          <div>
+            <input type="checkbox" id="medium" name="difficulty" value="medium">
+            <label for="medium">Medium</label>
+          </div>
+          <div>
+            <input type="checkbox" id="hard" name="difficulty" value="hard">
+            <label for="hard">Hard</label>
+          </div>
+        </fieldset>
+        </div>
+
+        <img class="cursor-munu-img" src="images/menu-cursor.png" alt="image-menu-cursor"></img>
+
+      </div>
+    </div>
+  </div>
+  <div class="card">
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row explication-video-data">
+
+    <div class="explications col-sm">
+      <h1 class="nom-du-jeu-carousel big"> LA MOURRE </h1>
+      <p class="description-jeu">
+        La Mourre is a game of chance in which <br>two players simultaneously show a number of fingers.
+      </p>
+      <img class="rpsls-data-img" src="images/mourre/data-mourre.jpg" alt="mourre-data"></img>
+    </div>
+      <div class="video-principale">
+        <video class="video-presentation-RPSLS"controls autoplay loop muted>
+          <source src="videos/mourre/presentation-lamourre.mp4" type="video/mp4">
+        </video>
+        <!-- <img class="img-preview-video" src="images/preview-video.png" alt="preview-video"> -->
+      </div>
+    </div> <!-- closes row -->
+
+  <div class="row">
+
+    <div class="explication-jeu">
+      <p>La Mourre is a game of chance in which two players simultaneously show a number of fingers, while each announcing  the alleged sum of the fingers erected by the two players. Win who guesses this sum. The name "la Mourre" comes  from the Italian dialect morra.</p>
+    </div>
+
+  </div> <!-- closes row -->
+
+  <div class="row">
+
+      <video class="video-carousel-paper" controls autoplay loop muted>
+          <source src="videos/mourre/explication.mp4" type="video/mp4">
+      </video>
+
+
+</div> <!-- closes row -->
+
+
+    <div class="row">
+
+  <div class="cta-rpsls">
+    <video class="video-cta-rpsls" controls autoplay loop muted>
+      <source src="videos/mourre/ctalamourre.mp4" type="video/mp4">
+    </video>
+  </div>
+
+    </div>
+
+
+  <div class="footer">
+      <p class="mentions-legales"> Mentions légales </p>
+      <p class="copyright"> © Gàubi 2018 </p>
+  </div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$('#carouselExampleIndicators').carousel({
+  interval: 9000,
+  pause : false
+})
+
+$('#myCollapsible').collapse({
+toggle: false
+})
